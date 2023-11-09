@@ -20,6 +20,8 @@ public class Staff {
 	private String gender;
 	private Date dob;
 	private int age;
+	boolean status;
+	boolean available;
 	
 	public int getId() {
 		return id;
@@ -69,4 +71,18 @@ public class Staff {
 	public void setAge(int age) {
 		this.age = age;
 	}
+	
+	public boolean isStatus() {
+		return status;
+	}
+	public void setStatus(boolean status) {
+		this.status = status;
+	}
+	public boolean isAvailable() {
+		return available;
+	}
+	public void setAvailable(boolean available) {
+		this.available = available;
+	}
+	
 }

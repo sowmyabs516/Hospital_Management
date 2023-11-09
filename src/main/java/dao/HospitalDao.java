@@ -100,4 +100,32 @@ public void savePatient(Patient patient) {
 public Patient fetchPatientById(int id){
 	return entityManager.find(Patient.class, id);
 }
+public void updateAvailability(Doctor doctor) {
+	entityTransaction.begin();
+	entityManager.merge(doctor);
+	entityTransaction.commit();
+	
+}
+public void updateDoctor(Doctor doctor) {
+	entityTransaction.begin();
+	entityManager.merge(doctor);
+	entityTransaction.commit();
+}
+public Doctor findAvailability() {
+	return null;
+	
+}
+public void updateStaff(Staff staff) {
+	entityTransaction.begin();
+	entityManager.merge(staff);
+	entityTransaction.commit();
+}
+public Doctor fetchDoctorById(int id){
+	return entityManager.find(Doctor.class, id);
+}
+
+public List<Doctor> fetchAvailableDoctors(){
+	return entityManager.createQuery("select x from Doctor x where available=true").getResultList();
+	
+}
 }

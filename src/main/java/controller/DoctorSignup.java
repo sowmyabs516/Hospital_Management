@@ -40,6 +40,7 @@ public class DoctorSignup extends HttpServlet{
 		resp.getWriter().print("<h1 style='color:green'>Data saved Successfully</h1>");
 		resp.getWriter().print("<h1>Your Doctor Id: "+ doctor.getId()+"</h1>");
 		req.getRequestDispatcher("Login.html").include(req, resp);
+		req.setAttribute("doctor",doctor);
 		}
 		else{
 			resp.getWriter().print("<h1 style='color:green'>Mobile or email already exists</h1>");

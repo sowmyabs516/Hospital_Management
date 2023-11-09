@@ -20,6 +20,9 @@ public class Doctor {
 	private Date dob;
 	private String qualification;
 	private String specialization;
+	boolean status;
+	boolean available;
+	
 	public int getId() {
 		return id;
 	}
@@ -73,6 +76,18 @@ public class Doctor {
 	}
 	public void setSpecialization(String specialization) {
 		this.specialization = specialization;
+	}
+	public boolean isStatus() {
+		return status;
+	}
+	public void setStatus(boolean status) {
+		this.status = status;
+	}
+	public boolean isAvailable() {
+		return available;
+	}
+	public void setAvailable(boolean available) {
+		this.available = available;
 	}
 	
 	

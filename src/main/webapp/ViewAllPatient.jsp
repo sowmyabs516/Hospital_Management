@@ -28,10 +28,10 @@
 		<tr>
 			<th><%=patient.getId()%></th>
 			<th><%=patient.getName()%></th>
-			<th><%=patient.getMobile()%></th>
-			<th><%=patient.getDob() %></th>
+			<th><%=patient.getMobile1()%></th>
+			<th><%=patient.getDob1() %></th>
 			<th><%=patient.getAge()%></th>
-			<th><a href="ViewPatientAppointment.jsp?id=<%=patient.getId()%>"><button>Click</button></a></th>
+			<th><a href="ViewPatientAppointment.jsp?id=<%=patient.getId()%>"><button></button></a></th>
 			
 		</tr>
 		<%

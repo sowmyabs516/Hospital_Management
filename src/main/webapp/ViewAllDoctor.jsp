@@ -10,6 +10,7 @@
 </head>
 <body>
 <% List<Doctor> list= (List<Doctor>)request.getAttribute("list"); %>
+
 <table border="1">
 <tr>
 <th>Id</th>
@@ -21,6 +22,7 @@
 <th>DOB</th>
 <th>Qualification</th>
 <th>Specialization</th>
+<th>Status</th>
 </tr>
 
 <%for(Doctor doctor :list){ %>
@@ -34,6 +36,8 @@
 <th><%=doctor.getDob() %></th>
 <th><%=doctor.getQualification() %></th>
 <th><%=doctor.getSpecialization() %></th>
+<th><a href="adminapprovedoctor?id=<%=doctor.getId()%>"><button>Change Status</button></a></th>
+
 </tr>
 <%} %>
 </table>

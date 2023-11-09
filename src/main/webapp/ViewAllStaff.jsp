@@ -21,6 +21,7 @@
 <th>Gender</th>
 <th>DOB</th>
 <th>Age</th>
+<th>Status</th>
 </tr>
 
 <%
@@ -35,7 +36,7 @@
 			<th><%=staff.getGender()%></th>
 			<th><%=staff.getDob() %></th>
 			<th><%=staff.getAge()%></th>
-			
+			<th><a href="adminstaffapproval?id=<%=staff.getId()%>"><button>Change Status</button></a></th>
 		</tr>
 		<%
 			}

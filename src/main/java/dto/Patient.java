@@ -14,7 +14,7 @@ public class Patient {
 	 int id;
 	 String name;
 	 long mobile1;
-	 Date dob;
+	 Date dob1;
 	 int age;
 	
 	public int getId() {
@@ -43,12 +43,13 @@ public class Patient {
 		this.mobile1 = mobile1;
 	}
 
-	public Date getDob() {
-		return dob;
+
+	public Date getDob1() {
+		return dob1;
 	}
 
-	public void setDob(Date dob) {
-		this.dob = dob;
+	public void setDob1(Date dob1) {
+		this.dob1 = dob1;
 	}
 
 	public int getAge() {

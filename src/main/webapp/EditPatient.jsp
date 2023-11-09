@@ -22,9 +22,9 @@ else{
 Enter Id:<input type="text" name="id" value="<%=patient.getId() %>" readonly="readonly">
 Name:<input type="text" name="name" value="<%=patient.getName()%>">
 <br>
-Mobile:<input type="text" name="mobile" value="<%=patient.getMobile()%>" readonly="readonly">
+Mobile:<input type="text" name="mobile" value="<%=patient.getMobile1()%>" readonly="readonly">
 <br>
-Date of Birth:<input type="date" name="dob" value="<%=patient.getDob()%>">
+Date of Birth:<input type="date" name="dob" value="<%=patient.getDob1()%>">
 <br>
 <button>Update</button><button type="reset">Cancel</button>
 </form>
