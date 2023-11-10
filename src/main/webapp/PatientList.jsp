@@ -30,7 +30,7 @@
 <th><%=patient.getMobile1()%></th>
 <th><%=patient.getDob1()%></th>
 <th><%=patient.getAge()%></th>
-<th><a href="AppointmentForm.jsp?<%=patient.getId()%>"><button>Book</button></a></th>
+<th><a href="AppointmentForm.jsp?id=<%=patient.getId()%>"><button>Book</button></a></th>
 </tr>
 <%
 }

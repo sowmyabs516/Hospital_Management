@@ -29,7 +29,7 @@ List<Doctor> list=dao.fetchAvailableDoctors();
 		request.getRequestDispatcher("Login.html").include(request, response);
 	}	else{%>
 	
-	<form action="" method="post">
+	<form action="/appointment" method="post">
 	Patient Id:<input type="text" name="id" value="<%=pid %>" readonly="readonly">
 	Patient Name:<input type="text" name="name" value="<%=patient.getName() %>" readonly="readonly">
 	Staff Name: <input type="text" name="staffname" value="<%=staff.getName()%>" readonly="readonly"><br>

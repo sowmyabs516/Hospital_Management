@@ -18,11 +18,11 @@ if(patient==null){
 }
 else{
 %>
-<form>
+<form action="updatepatient" method="post">
 Enter Id:<input type="text" name="id" value="<%=patient.getId() %>" readonly="readonly">
-Name:<input type="text" name="name" value="<%=patient.getName()%>">
+Name:<input type="text" name="name" value="<%=patient.getName()%>" readonly="readonly">
 <br>
-Mobile:<input type="text" name="mobile" value="<%=patient.getMobile1()%>" readonly="readonly">
+Mobile:<input type="text" name="mobile" value="<%=patient.getMobile1()%>">
 <br>
 Date of Birth:<input type="date" name="dob" value="<%=patient.getDob1()%>">
 <br>

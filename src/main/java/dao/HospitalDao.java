@@ -128,4 +128,9 @@ public List<Doctor> fetchAvailableDoctors(){
 	return entityManager.createQuery("select x from Doctor x where available=true").getResultList();
 	
 }
+public void updatePatient(Patient patient) {
+	entityTransaction.begin();
+	entityManager.merge(patient);
+	entityTransaction.commit();
+}
 }
